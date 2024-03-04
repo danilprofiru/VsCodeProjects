@@ -1,0 +1,190 @@
+/* Глобальные настройки сайта */
+
+body {
+  background-color: #999999;
+  background-image: linear-gradient(45deg, rgb(11,83,113) 0%, rgb(94,74,100) 25%, rgb(133,64,86) 50%, rgb(163,51,68) 75%, rgb(188,35,44) 100%);
+  background-size: 1920px 1080px;
+  background-repeat: repeat;
+}
+.hide {
+  display: none !important;
+}
+.container {
+  width: 0 auto;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+}
+
+/* ФИО */
+
+.info__fullname {
+  align-items: center;
+  font-size: 25px;
+  font-weight: 99999999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: solid;
+}
+
+/* Ссылка на тг */
+
+.info__nickname_tg {
+  align-items: center;
+  font-size: 20px;
+  font-weight: 5000;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Ссылка на гит */
+
+.info__nickname_github {
+  align-items: center;
+  font-size: 20px;
+  font-weight: 5000;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* О себе */
+
+.info__title {
+  align-items: center;
+  font-size: 50px;
+  font-weight: 5000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* Лого тг */
+
+.info_logo_tg {
+  width: 25px;
+}
+
+/* Лого гит */
+
+.info_logo_git {
+  width: 20px;
+}
+
+/* Визитка */
+
+.header__logo {
+  width: -100px;
+  margin: 0px;
+  font-size: 100px;
+  font-weight: 5000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+.header__menu {
+  position: relative;
+}
+.header__menu .menu__btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header__menu .menu__btn svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* Выпадающие меню сбоку */
+
+.header__menu .menu__list {
+  margin: 10px 10px;
+  padding: 10px 20px;
+  list-style-type: none;
+  border-radius: 4px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: menu-showing 0.3s;
+}
+
+/* Цвет текста в выподающем меню сбоку */
+
+.header__menu .menu__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+@keyframes menu-showing {
+  from {
+    transform: translateY(95%);
+  }
+}
+
+/* Кнопка выпадающего списка */
+
+.port_button {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+
+.port_button:hover,
+.port_button:focus {
+  background-color: #2980b9;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+
+.portfolio_button {
+  position: relative;
+  display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+
+.portfolio-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+
+.portfolio-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+
+.portfolio-content a:hover {
+  background-color: #ddd;
+}
+
+/* Показать выпадающее меню */
+
+.show {
+  display: block;
+}
