@@ -2,7 +2,7 @@ package lab3;
 
 import java.util.List;
 
-public class Order {
+public class Order<K, V> {
     private String orderDate;
     private List<String> items;
     private String status;
