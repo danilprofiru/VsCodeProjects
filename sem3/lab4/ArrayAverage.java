@@ -2,7 +2,7 @@ package lab4;
 
 public class ArrayAverage {
     public static void main(String[] args) {
-        String[] arr = { "1", "2", "3", "4", "5" };
+        String[] arr = { "1", "sar", "3", "4", "5" };
         int sum = 0;
         double average = 0.0;
 

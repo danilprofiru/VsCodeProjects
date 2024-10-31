@@ -2,7 +2,7 @@ package task;
 
 import java.util.List;
 
-public class task3 {
+public class tasks3 {
 
     public static void main(String[] args) {
         // 1. Странная пара строк
