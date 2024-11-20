@@ -6,7 +6,7 @@ public class WordsStartingWithLetter {
     public static void main(String[] args) {
         String text = "The tiger and the turtle";
         char letter = 'T';
-        Pattern pattern = Pattern.compile("\\b" + letter + "[A-Za-z]*\\b");
+        Pattern pattern = Pattern.compile("\\b" + letter + "[A-Za-z]*\\b", Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(text);
 
         while (matcher.find()) {
